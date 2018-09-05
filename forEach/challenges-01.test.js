@@ -213,6 +213,24 @@ const createList = (availableItems) => {
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  const newArr = [];
+  arr.forEach(function(num){
+    if (num % 3 === 0 && num % 5 == 0){
+      newArr.push('Fizz Buzz');
+    }
+
+    else if (num % 5 === 0){
+      newArr.push('Buzz');
+    }
+
+    else if (num % 3 === 0){
+      newArr.push('Fizz');
+    }
+    else {
+      newArr.push(num);
+    }
+  })
+  return newArr;
 }
 
 // ------------------------------------------------------------------------------------------------
