@@ -187,6 +187,14 @@ const removeWithAnon = (input) => {
 
 const createList = (availableItems) => {
   // Solution code here...
+  const shopList = [];
+  availableItems.forEach(function(item){
+    if (item.available === true){
+      shopList.push(item.name);
+    } 
+  }
+  )
+  return shopList;
 }
 
 // ------------------------------------------------------------------------------------------------
