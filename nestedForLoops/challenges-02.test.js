@@ -55,11 +55,14 @@ const grandTotal = (stores) => {
 
 const salesData = (hours, data) => {
   // Solution code here...
-//   const formattedData = [];
-//   hourlySales.forEach(function(data)){
-//     return 
-//   }
- };
+  const formattedData = [];
+  hoursOpen.forEach(function()){
+    for (let i = 0; i<hoursOpen.length; i++)
+    data[i]
+    
+  }
+  return formattedData;
+};
 
 // ------------------------------------------------------------------------------------------------
 // CHALLENGE 3
