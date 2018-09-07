@@ -80,9 +80,23 @@ const battleship = (board, row, col) => {
 
 const calculateProduct = (numbers) => {
   // Solution code here...
-  numbers.reduce(function(a, b){
+  // let rowValues = new Array(numbers.length).fill(0);
+  // let columnValues = new Array(numbers.length).fill(0);
+
+  // for(let i=0; i<numbers.length-1; i++) {
+  //   for(let j=0; j<numbers[i].length-1; j++) {
+  //     let value = numbers[i][j];
+  //     rowValues[i] += value;
+  //     columnValues[j] += value;
+  //   }
+  // }
+  let arrays = numbers
+  arrays = arrays.reduce(function(a, b){
     return a.concat(b);
   }, []);
+
+  return calculateProduct(arrays);
+  
 };
 // ------------------------------------------------------------------------------------------------
 // CHALLENGE 5
