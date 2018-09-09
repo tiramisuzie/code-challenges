@@ -89,6 +89,7 @@ const matchMonth = (input) => {
 
 const noPunctuation = input => {
   // Solution code here...
+  let validator = /\w+ /g
 };
 
 // ------------------------------------------------------------------------------------------------
@@ -122,7 +123,7 @@ const seashells = 'She sells seashells by the seashore. The shells she sells are
 
 const findShells = (phrase) => {
   // Solution code here...
-  let validator = /[ells]+/;
+  let validator = /[a-z]+(ells)+/g;
   return phrase.match(validator);
 };
 
