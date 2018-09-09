@@ -89,7 +89,8 @@ const matchMonth = (input) => {
 
 const noPunctuation = input => {
   // Solution code here...
-  let validator = /\w+ /g
+  let validator = /\w+ /g;
+  return input.match(validator);
 };
 
 // ------------------------------------------------------------------------------------------------
@@ -107,6 +108,8 @@ const noPunctuation = input => {
 
 let hangman = (str) => {
   // Solution code here...
+  let validator = /[aeiou]/g;
+  return str.replace(validator, '_');
 };
 
 // ------------------------------------------------------------------------------------------------
