@@ -126,6 +126,11 @@ const listFoods = (recipe) => {
 const stepActions = (recipe) => {
   let result = [];
   // Solution code here...
+  for (let i = 0; i<gruffaloCrumble.steps.length; i++){
+    let seperate = gruffaloCrumble.steps[i].split(' ');
+    let verb= seperate.splice(0,1);
+    result.push(verb[0]);
+  }
   return result;
 }
 
