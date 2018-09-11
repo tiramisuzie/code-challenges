@@ -21,6 +21,7 @@ const getKeys = (obj) => {
 
 const getValues = (obj) => {
   // Solution code here...
+  return Object.values(obj);
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -32,6 +33,7 @@ const getValues = (obj) => {
 
 const getEntries = (obj) => {
   // Solution code here...
+  return Object.entries(obj);
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -50,6 +52,14 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 
 const getFrom = (obj, property) => {
   // Solution code here...
+  return Object[property](obj);
+  // if (property === 'keys'){
+  //   return Object.keys(obj);
+  // } else if (property === 'values'){
+  //   return Object.values(obj);
+  // } else {
+  //   return Object.entries(obj);
+  // }
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -108,6 +118,16 @@ let characters = [
 
 const totalCharacters = (arr) => {
   // Solution code here...
+// let char = 0;
+// arr.forEach(i =>{
+//   char++;
+// })
+// return char;
+const newArr = [];
+arr.forEach(stuff =>{
+  newArr.push(getFrom(stuff, 'entries'));
+});
+  return newArr.length;
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -119,6 +139,7 @@ const totalCharacters = (arr) => {
 
 const getHouses = (arr) => {
   // Solution code here...
+  getFrom(property)
 }
 
 // ------------------------------------------------------------------------------------------------
