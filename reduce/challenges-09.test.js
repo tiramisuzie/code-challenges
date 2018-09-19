@@ -128,6 +128,7 @@ const extractStat = (statName, input) => {
   });
 };
 
+
 // ------------------------------------------------------------------------------------------------
 // CHALLENGE 4
 //
@@ -149,9 +150,14 @@ const calculateAverage = (input) => {
 //
 // ------------------------------------------------------------------------------------------------
 
-const extractChildren = input => {
+
+const extractChildren = input => input 
   // Solution code here...
-};
+  .filter(char => char.name.inlcudes('a'))
+  .reduce((ans,char)=> char.children? ans.concat(char.children): ans, []);
+
+
+
 
 // ------------------------------------------------------------------------------------------------
 // CHALLENGE 6

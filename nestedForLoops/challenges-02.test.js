@@ -56,11 +56,15 @@ const grandTotal = (stores) => {
 const salesData = (hours, data) => {
   // Solution code here...
   const formattedData = [];
-  hoursOpen.forEach(function()){
-    for (let i = 0; i<hoursOpen.length; i++)
-    data[i]
+  data.forEach (hourlyData) => {
+    const obj = {};
+    data.forEach((hourlyData, index) => {
+    obj.sales = hourlyData
+
     
+    // return data.map((hourlyData,index)=> ({sales: `${hourlyData}) cookies`,time: hours[index]})
   }
+}
   return formattedData;
 };
 

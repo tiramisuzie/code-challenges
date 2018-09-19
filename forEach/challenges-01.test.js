@@ -102,8 +102,7 @@ const addValues = (arr, value) => {
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
   for (let i = 0; i < times; i++) {
-    let value = num;
-    callback(arr, value);
+    callback(arr, num);
   }
   return arr;
 }
@@ -214,23 +213,26 @@ const createList = (availableItems) => {
 const fizzbuzz = (arr) => {
   // Solution code here...
   const newArr = [];
-  arr.forEach(function(num){
-    if (num % 3 === 0 && num % 5 == 0){
-      newArr.push('Fizz Buzz');
-    }
+  arr.forEach(function(num) =>{
 
-    else if (num % 5 === 0){
-      newArr.push('Buzz');
-    }
-
-    else if (num % 3 === 0){
-      newArr.push('Fizz');
-    }
-    else {
-      newArr.push(num);
-    }
   })
-  return newArr;
+  // arr.forEach(function(num){
+  //   if (num % 15 === 0){
+  //     newArr.push('Fizz Buzz');
+  //   }
+
+  //   else if (num % 5 === 0){
+  //     newArr.push('Buzz');
+  //   }
+
+  //   else if (num % 3 === 0){
+  //     newArr.push('Fizz');
+  //   }
+  //   else {
+  //     newArr.push(num);
+  //   }
+  // })
+  // return newArr;
 }
 
 // ------------------------------------------------------------------------------------------------

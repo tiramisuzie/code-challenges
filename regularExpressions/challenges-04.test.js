@@ -70,7 +70,7 @@ const citiesAtoJ = (cities) => {
 
 const matchMonth = (input) => {
   // Solution code here...
-  let validator = /^[oO]?(ct)(ober)?$/;
+  let validator = /^[oO](ct)(ober)?$/;
   return `${input}`.match(validator);
 };
 

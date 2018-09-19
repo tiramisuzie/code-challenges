@@ -175,7 +175,15 @@ const hasChildrenEntries = (arr, character) => {
 
 const houseSize = (arr) => {
   // Solution code here...
+  let results = [];
+  getFrom(arr,'values').forEach((character) => {
+    let count = character.children.length +1;
+    if (character.spouse) count++;
+    let stuff = {house: character.house, members:count};
+    results.push(stuff);
+  })
 }
+return results;
 
 // ------------------------------------------------------------------------------------------------
 // CHALLENGE 10
@@ -193,6 +201,13 @@ const deceasedSpouses = ['Catelyn', 'Lysa', 'Robert', 'Khal Drogo', 'Alerie'];
 
 const houseSurvivors = (arr) => {
   // Solution code here...
+  let result = [];
+  getFrom(arr,'values').forEach((character) => {
+    let count = character.children.length +1;
+    if(character.spouse){
+      
+    }
+  })
 }
 
 // ------------------------------------------------------------------------------------------------
