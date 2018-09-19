@@ -193,6 +193,7 @@ const removeLastCharacters = (str, numberOfCharacters) => {
 
 const removeVowels = (input) => {
   // Solution code here...
+  return input.replace(/[aeiou]/ig, '');
 };
 
 // ------------------------------------------------------------------------------------------------

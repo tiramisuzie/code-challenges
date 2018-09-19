@@ -90,12 +90,9 @@ const calculateProduct = (numbers) => {
   //     columnValues[j] += value;
   //   }
   // }
-  let arrays = numbers
-  arrays = arrays.reduce(function(a, b){
-    return a.concat(b);
-  }, []);
-
-  return calculateProduct(arrays);
+  numbers.reduce((a, b) => 
+    a.concat(b)).reduce( (a,b) => a * b)
+  
   
 };
 // ------------------------------------------------------------------------------------------------
@@ -139,7 +136,16 @@ let lowestWeeklyTemperatureData = [
 
 const lowestWeeklyAverage = (weather) => {
   // Solution code here...
+  let answer = Number.MAX_SAFE_INTEGER;
+  weather.forEach(week => {
+    if (week.average() < answer){
+     answer = week.average();
+  }
+  });
+  return answer;
 };
+
+
 
 // ------------------------------------------------------------------------------------------------
 // CHALLENGE 7
@@ -168,6 +174,7 @@ const lowestWeeklyAverage = (weather) => {
 
 const excel = (str) => {
   // Solution code here...
+
 };
 
 // ------------------------------------------------------------------------------------------------
