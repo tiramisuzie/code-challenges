@@ -17,7 +17,6 @@ const countNumberOfElements = (input) => {
  })
 };
 
-
 // ------------------------------------------------------------------------------------------------
 // CHALLENGE 2
 //
@@ -130,7 +129,6 @@ const extractStat = (statName, input) => {
 };
 
 
-const extractStat = (statName, input) => input.reduce((ans, x))
 // ------------------------------------------------------------------------------------------------
 // CHALLENGE 4
 //
@@ -152,10 +150,12 @@ const calculateAverage = (input) => {
 //
 // ------------------------------------------------------------------------------------------------
 
+
 const extractChildren = input => input 
   // Solution code here...
   .filter(char => char.name.inlcudes('a'))
   .reduce((ans,char)=> char.children? ans.concat(char.children): ans, []);
+
 
 
 
